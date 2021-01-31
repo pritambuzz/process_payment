@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "600e982e-e453-45bc-b3cc-2afc8edf6cf5",
+		"name": "process_payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post process payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTIxODAyMTAsImlhdCI6MTYxMjA5MzgwNSwic3ViIjoxfQ.MjfURf-qE-r-7goxAiira3suxelzTwoDc7vrVcc027w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"CreditCardNumber\": 111111111111112,\n  \"CardHolder\": \"pritam7\",\n  \"SecurityCode\": 122,\n  \"ExpirationDate\": \"2022/11/12\",\n  \"Amount\": 3333.33\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/processpayment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"processpayment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"pritam123\",\n    \"admin\": true,\n    \"password\": \"pritam123\",\n    \"email\": \"pritam123@test.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
