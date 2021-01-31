@@ -24,6 +24,9 @@ Make sure to run the initial migration commands to update the database.
 
     Open the following url on your browser to view swagger documentation
     http://127.0.0.1:5000/
+    
+    Create user using user endpoint /user as depecited inside postman collection.
+    Once user is created token will get generated and it can be use to call process payment endpoint.
 
 
 ### Using Postman ####
